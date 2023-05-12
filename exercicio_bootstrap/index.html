@@ -8,7 +8,25 @@
     <title>Fomulário Bootstrap</title>
 </head>
 <body>
-    <h1>Olá Mundo!</h1>
-    <script src=""></script>
+    <div class="container">
+        <div class="row">
+            <h2>Fomulário</h2>
+            <form>
+                <label class="form-label" for="nome">Seu nome:</label>
+                <input type="text" class="form-control" id="nome">
+
+                <label class="form-label" for="email">E-mail:</label>
+                <input type="text" class="form-control" id="email">
+
+                <label for="mensagem" class="form-label">Sua Mensagem:</label>
+                <textarea id="mensagem" class="form-control"></textarea>
+
+                <input type="checkbox" name="check" id="aceito-termos">
+                <label for="aceito-termos" class="form-check-label">Li e concordo com os termos do site.</label>
+                
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
